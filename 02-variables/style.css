@@ -1,0 +1,21 @@
+:root{
+    --color-principal: green;
+    --color-secundario: blue;
+    --fuente:Arial, Verdana;
+    --fuente-size: 45px;
+}
+
+h1{
+    color: var(--color-principal);
+    font-family: var(--fuente);
+    font-size: var(--fuente-size);
+}
+
+p{
+    color: var(--color-principal);
+    font-family: var(--fuente);
+}
+
+.p{
+    color: var(--color-secundario);
+}
