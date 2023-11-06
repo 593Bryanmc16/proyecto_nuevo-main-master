@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Bryan Quillay</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/scroll.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/about-me.css">
+    <link rel="stylesheet" href="./assets/css/blog.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/poppins/poppins.css">
+</head>
+<body>
+    <!-- layout principal -->
+    <div class="layout">
+        <!-- barra lateral (info usuario) -->
+        <aside class="layout__aside">
+            <section class="aside__user-info">
+                <!-- informacion general -->
+                <div class="user-info__general">
+                    <div class="user-info__container-image">
+                        <img src="./assets/img/default-user.jpg" alt="user's profile picture" class="user-info__image">
+                    </div>
+                    <h2 class="user-info__name">Bryan Quillay</h2>
+                    <h4 class="user-info__job">Web Developer</h4>
+                </div>
+                <!-- menu de navegacion -->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link ">
+                                <i class="menu__icon fa-solid fa-house"></i>
+                                <span class="menu__overlay">Home</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="/06-maquetacion-web1/about-me.html" class="menu__link ">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">About Me</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="curriculum.html" class="menu__link ">
+                                <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                                <span class="menu__overlay">Curriculum</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="portfolio.html" class="menu__link ">
+                                <i class="menu__icon fa-solid fa-briefcase"></i>
+                                <span class="menu__overlay">Portfolio</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="./blog.html" class="menu__link menu__link--active">
+                                <i class="menu__icon fa-solid fa-book"></i>
+                                <span class="menu__overlay">Blog</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="contact.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-phone"></i>
+                                <span class="menu__overlay">Contact Me</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- links aredes sociales -->
+                <div class=" user-info__links">
+                    <ul class="links__social">
+                        <li class="social__option">
+                            <a href="https://www.youtube.com/channel/UCQMUncGMtga05SC9pXYCs5g" class="social__link">
+                                <i class="social__icon fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="social__option">
+                            <a href="https://www.linkedin.com/in/bryan-quillay-a29987246/" class="social__link">
+                                <i class="social__icon fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="social__option">
+                            <a href="https://www.instagram.com/593bryamc16/" class="social__link">
+                                <i class="social__icon fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- boton del curriculum -->
+                <div class="user-info__buttons">
+                    <a href="#" class="user-info__btn">Download CV</a>
+                </div>
+                <!-- pie de pagina -->
+                <footer class="user-info__footer">
+                    &copy; 2025 Bryan Quillay
+                </footer>
+            </section>
+        </aside>
+        <!-- Main Container -->
+        <main class="layout__content">
+            <section class="content__page content__blog">
+                <header class="blog__header">
+                    <h1 class="blog__tittle"> Blog</h1>
+                </header>
+                <section class="blog__article">
+                    <article class="articles__article">
+                        <div class="article__top">
+                            <div class="article__category">Development</div>
+                            <a class="article__img-link" href="#">
+                                <div class="article__mask">
+                                    <img src="./assets/img/articulo-1.jpg" alt="img blog" class="article__img">
+                                </div>
+                                <div class="article__logo">
+                                    <i class="fa-solid fa-book article__icon"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article__bottom">
+                            <time datetime="2024-08-30" class="article__date">30/08/2024</time>
+                            <a href="#" class="article__link">
+                                <h2 class="article__tittle">How to learn how to code in 2024</h2>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="articles__article">
+                        <div class="article__top">
+                            <div class="article__category">Development</div>
+                            <a class="article__img-link" href="#">
+                                <div class="article__mask">
+                                    <img src="./assets/img/articulo-2.jpg" alt="img blog" class="article__img">
+                                </div>
+                                <div class="article__logo">
+                                    <i class="fa-solid fa-book article__icon"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article__bottom">
+                            <time datetime="2024-08-30" class="article__date">05/09/2024</time>
+                            <a href="#" class="article__link">
+                                <h2 class="article__tittle">How to create CSS animations </h2>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="articles__article">
+                        <div class="article__top">
+                            <div class="article__category">Development</div>
+                            <a class="article__img-link" href="#">
+                                <div class="article__mask">
+                                    <img src="./assets/img/articulo-3.jpg" alt="img blog" class="article__img">
+                                </div>
+                                <div class="article__logo">
+                                    <i class="fa-solid fa-book article__icon"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article__bottom">
+                            <time datetime="2024-08-30" class="article__date">30/10/2024</time>
+                            <a href="#" class="article__link">
+                                <h2 class="article__tittle">How to use localStorage in JavaScript</h2>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="articles__article">
+                        <div class="article__top">
+                            <div class="article__category">Development</div>
+                            <a class="article__img-link" href="#">
+                                <div class="article__mask">
+                                    <img src="./assets/img/articulo-4.jpg" alt="img blog" class="article__img">
+                                </div>
+                                <div class="article__logo">
+                                    <i class="fa-solid fa-book article__icon"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article__bottom">
+                            <time datetime="2024-08-30" class="article__date">01/06/2025</time>
+                            <a href="#" class="article__link">
+                                <h2 class="article__tittle">How to mockup a web</h2>
+                            </a>
+                        </div>
+                    </article>
+                </section>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

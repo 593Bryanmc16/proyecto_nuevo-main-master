@@ -1,6 +1,6 @@
 /* General Styles  (about me and other pages) */
 
-.content__about, .content__resume{
+.content__about, .content__resume, .content__portfolio, .content__blog, .content__contact{
     display: block;
     height: 100%;
     min-height: 100%;
@@ -10,17 +10,17 @@
     box-sizing: border-box;
 }
 
-.about__header, .resume__header{
+.about__header, .resume__header, .portfolio__header, .blog__header, .contact__header{
     display: inline-block;
     margin-bottom: 4.5rem;
 }
 
-.about__tittle, .resume__tittle{
+.about__tittle, .resume__tittle, .portfolio__tittle, .blog__tittle, .contact__tittle{
     font-size: 3.2rem;
     position: relative;
 }
 
-.about__tittle::after{
+.about__tittle::after, .resume__tittle::after, .portfolio__tittle::after, .blog__tittle::after, .contact__tittle::after{
     content: '';
     position: absolute;
     top: 20px;
@@ -31,7 +31,7 @@
     background-size: 6px 6px;
 }
 
-.tittle__color{
+.tittle__color, .subtittle__color{
     color: var(--secondary-color);
 }
 
@@ -69,25 +69,27 @@
 }
 
 
-/* shared styles "about" */
+/* General shared styles "about and other sections" */
 
 .about__services, .about__reviews, .about__clients, .about__prices, .about__extra{
     width: 100%;
     margin-bottom: 3rem;
 }
 
-.services__header, .reviews__header, .clients__header,.prices__header, .extra_header{
+.services__header, .reviews__header, .clients__header,.prices__header, .extra_header,.resume__subheader, .contact__form-header {
     display: inline-block;
     padding-right: 1.2rem;
     position: relative;
     margin-bottom: 2.5rem;
 }
 
-.services__tittle, .reviews__tittle, .clients__tittle, .prices__tittle, .extra__tittle{
+.services__tittle, .reviews__tittle, .clients__tittle, .prices__tittle, .extra__tittle, .resume__subtittle, .form-header__subtittle{
     font-size: 2.1rem;
 }
 
-.services__tittle::after, .reviews__tittle::after, .clients__tittle::after, .prices__tittle::after, .extra__tittle::after{
+.services__tittle::after, .reviews__tittle::after, .clients__tittle::after, .prices__tittle::after, .extra__tittle::after,.resume__subtittle::after,
+.form-header__subtittle::after
+{
     content: '';
     position: absolute;
     top: 20px;
