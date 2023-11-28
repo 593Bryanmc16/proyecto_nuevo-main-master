@@ -1,0 +1,40 @@
+/* body{
+    back
+    ground-color: aqua;
+} */
+
+html{
+    font-size: 10px;
+    overflow: auto;
+}
+
+li{
+    font-size: 2rem;
+    list-style: none;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+li::marker{
+    color: blue;
+    font-size: 3rem;
+}
+
+img{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 900px;
+    box-shadow: 0px 0px 10px black ;
+    transform: scale(1.1) translateX(100%) rotate(50deg);
+}
+
+.caja{
+    width: calc(300px / 2);
+    height: calc(300px /2);
+    border: 2px solid red;
+    background: radial-gradient( circle at top,red , violet 90% , lightblue);
+    color: white;
+    font-size: 3rem;
+    line-height: 15rem;
+    text-align: center;
+}

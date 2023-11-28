@@ -20,7 +20,7 @@
 
 /* general styles */
 html{
-    font-size: 10px;
+    font-size: 10px;       
 }
 
 body{
@@ -225,7 +225,7 @@ body{
     display: block;
     position: absolute;
     top: 0;
-    right: -140px;
+    right: -14rem;
     min-width: 11rem;
     background-color: var(--transparent-color);
 

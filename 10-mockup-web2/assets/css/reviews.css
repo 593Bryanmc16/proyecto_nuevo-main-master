@@ -1,0 +1,88 @@
+/* reviews styles */
+
+.layout__reviews{
+    position: relative;
+    padding: 14rem 11rem;
+    z-index: 1;
+}
+
+.reviews__grid{
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.reviews__header{
+    text-align: left;
+    margin-bottom: 6rem;
+}
+
+.reviews__description{
+    font-size: 2rem;
+    margin-top: 3rem;
+    width: 50%;
+}
+
+.reviews__container{
+    display: flex;
+    margin-top: 10rem;
+    gap: 3rem;
+}
+
+.reviews__review{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.review__company{
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+.review__description{
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--body-text-color);
+    margin-bottom: 4rem;
+}
+
+.review__author{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.author__img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+}
+
+.author__content{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.author__name{
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--bg-dark-color);
+    margin-bottom: .5rem;
+}
+
+.author__description{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--text-description-color);
+    opacity: .8;
+}
+
+.review-shapes__item{
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    top: 13%;
+    right: 35%;
+}

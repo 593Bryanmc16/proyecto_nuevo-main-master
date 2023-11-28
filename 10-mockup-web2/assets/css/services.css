@@ -1,0 +1,169 @@
+/* services */
+.layout__services{
+    position: relative;
+    margin: 14rem 10rem;
+    margin-bottom: 7rem;
+    z-index: 2;
+}
+
+.services__grid{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    z-index: 3;
+}
+
+.services__header{
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.services__subtitle,
+.projects__subtitle,
+.stats__subtitle,
+.reviews__subtitle,
+.clients__subtitle,
+.news__subtitle{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--subtitle-color);
+    margin-bottom: 1.5rem;
+}
+
+.services__title,
+.projects__title,
+.stats__title,
+.reviews__title,
+.clients__title,
+.news__title{
+    font-size: 6.8rem;
+    font-weight: 500;line-height: 1.2;
+    color: var(--title-color);
+}
+
+.services__list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 6rem;
+}
+
+.services__service{
+    width: 20%;
+    height: 100%;
+    padding: 5rem 4rem;
+    margin-bottom: 3rem;
+    background: linear-gradient(180deg, #f8f8f8, rgba(255, 255,255, 0) );
+    background-color: var(--secondary-color);
+    border: 1px solid ;
+    border-image-source: linear-gradient(90deg, #f8f8f8, rgba(255, 255,255, 0) );
+    border-radius: 3rem;
+    gap: 4rem;
+    transition: all 300ms ease-in-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.services__service:hover{
+    background-color: var(--bg-services--color);
+}
+
+.service__container-img{
+    max-width: 8.5rem;
+    flex: 1;
+}
+
+.service__content{
+    flex: 1;
+}
+
+.service__title,
+.new__title{
+    color: var(--title-color);
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+    transition: all 300ms ease-in-out;
+}
+
+.service__link,
+.new__link{
+    color: var(--title-colors);
+}
+
+.service__description,
+.new__description{
+    font-size: 1.7rem;
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+
+.service__more,
+.new__more{
+    position: relative;
+    display: inline-block;
+    color: var(--body-text-color);
+    font-weight: 500;
+    padding-left: 4rem;
+    transition: all 300ms ease-in-out;
+}
+
+.service__more::before{
+    content: "";
+    width: 3.5rem;
+    height: 1.5px;
+    background-color: var(--body-text-color);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.service__more:hover,
+.service__title:hover{
+    color: var(--primary-color);
+}
+
+.service__more:hover .service__more::before{
+    background-color: var(--primary-color);
+}
+
+.services__service--bottom{
+   
+    margin-top: 20rem;
+
+}
+
+.services__service--middle{
+    margin-top: 10rem;
+}
+
+.services__service--top{
+    margin-top: 0rem;
+}
+
+/* shapes behind services */
+
+.service-shapes__item{
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    top: 0;
+}
+
+.service-shapes--shape1{
+    top: -55px;
+    right: 17%;
+}
+
+.service-shapes--shape2{
+    top: 95px;
+    left: 50%;
+}
+
+.service-shapes--shape3{
+    top: 35%;
+    left:320px
+}

@@ -1,0 +1,60 @@
+/* Clients Styles */
+
+.layout__clients{
+    position: relative;
+    padding: 14rem 11rem;
+    background-color: var(--bg-dark-color);
+    z-index: 1;
+}
+
+.clients__container{
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.clients__subtitle{
+    margin-bottom: 2rem;
+}
+
+.clients__title{
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+}
+
+.clients__description,
+.news__description{
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin-bottom: 10rem;
+    color: var(--text-description-color);
+}
+
+.clients__logo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.clients__img{
+    filter: grayscale(100%);
+    opacity: .3;
+    transition: all 300ms ease-in-out;
+}
+
+.clients__item:hover > .clients__img{
+    filter: grayscale(0);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.client-shapes--shape1{
+    position: absolute;
+    top: 25%;
+    left: 55%;
+    width: calc(25% - 3rem);
+    pointer-events: none;
+    z-index: -1;
+}
