@@ -33,9 +33,8 @@
 
 .clients__logo{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    gap: 3rem;
+    width: 100%;
 }
 
 .clients__img{

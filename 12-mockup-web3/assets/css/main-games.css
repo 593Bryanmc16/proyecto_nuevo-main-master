@@ -1,0 +1,75 @@
+/* main-games styles */
+
+.main__games{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.games__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.games__game{
+    flex-basis: calc(50% - 1.5rem);
+    
+    position: relative;
+    overflow: hidden;
+}
+
+.game__container-img{
+    width: 100%;
+    overflow: hidden;
+}
+
+.game__img{
+    width: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+.games__game:hover  .game__img{
+    transform: scale(1.1);
+}
+
+.game__rating{
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    z-index: 10;
+}
+
+.game__detail{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7rem;
+    padding: .5rem 1rem;
+    padding-right: 5rem;
+    transition: all 300ms ease-in-out;
+}
+
+.games__game:hover .game__detail {
+    background-color: var(--sublist-hover-item-color);
+}
+
+.game__link-title{
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    text-shadow: 1px 1px 3px var(--bg-navbar-color);
+    text-transform: uppercase;
+    transition: all 300ms ease-in-out;
+}
+
+.game__title:hover .game__link-title{
+    text-shadow: 0 0 5px black;
+}
+
+.game__container-category{
+    transition: all 300ms ease-in-out;
+}

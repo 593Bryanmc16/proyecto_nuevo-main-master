@@ -1,0 +1,326 @@
+/* aside styles */
+
+.layout__aside{
+    grid-area: aside;
+    width: 100%;
+    height: fit-content;
+    padding: 1.5rem;
+    background-color: var(--aside-background-color);
+}
+
+.aside__login{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.form__container-username,
+.form__container-password,
+.form__container-remember,
+.form__submit{
+    margin-bottom: 1rem;
+}
+
+.form__label{
+    font-weight: 500;
+}
+
+.form__input{
+    width: 100%;
+    height: 3rem;
+    border: 1px solid rgba(0, 0, 0, .10);
+    padding: .5rem;
+}
+
+.form__container-remember{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    gap: .5rem;
+}
+
+.form__submit{
+    font-size: 1.3rem;
+    font-weight: 400;
+    border: 1px solid rgba(0, 0, 0, .10);
+    border-radius: 3px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 1rem;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.form__submit:hover{
+    font-weight: 500;
+}
+
+.login__register,
+.login__lost-password{
+    display: block;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+/* asie social media styles section */
+
+.aside__social{
+    width: 100%;
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+.social__list{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    gap: 1rem;
+}
+
+.social__item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5.5rem;
+    padding: .5rem 0;
+    transition: all 400ms ease-in-out;
+}
+.social__item:hover{
+    padding-left: 6.5rem;
+}
+
+.social__item--1{
+    background-color: var(--twitter-bg-color);
+}
+
+.social__item--2{
+    background-color: var(--facebook-bg-color);
+}
+
+.social__item--3{
+    background-color: var(--youtube-bg-color);
+}
+
+.social__item--4{
+    background-color: var(--instagram-bg-color);
+}
+
+.social__item--5{
+    background-color: var(--linkdin-bg-color);
+}
+
+.social__link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: 2rem;
+}
+
+.social__icon i{
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    transition: all 300ms ease-in-out;
+}
+
+.social__item:hover .social__icon i,
+.social__item:hover .social__number{
+    font-weight: 700
+}
+
+.social__followers{
+    line-height: 1.05;
+    color: var(--primary-color);
+}
+
+.social__number{
+    font-size: 1.85rem;
+    font-weight: 500;
+    transition: all 300ms ease-in-out;
+}
+
+.social__word{
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: all 300ms ease-in-out;
+}
+
+.social__item:hover .social__word{
+    font-weight: 500;
+}
+
+.social__tweets{
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 0; 
+    padding-left: 1.5rem;
+    background-color: var(--twitter-bg-color);
+}
+
+.tweets__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3rem;
+    gap: 1rem;
+    color: var(--primary-color);
+}
+
+.tweets__title{
+    font-weight: 400;
+}
+
+.tweets__content{
+    width: 93%;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+/* aside recent styles section */
+
+.aside__recent{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.recent__list-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.recent__list-posts{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.recent__item,
+.list-popular__item{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.recent__container-info{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+}
+
+.recent__meta-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--marquee-text-color);
+    font-weight: 400;
+}
+
+/* aside review styles section */
+
+.aside__last-reviews{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.last-reviews__subheader{
+    margin: 0 auto;
+}
+
+.last-reviews__list-header{
+    display: flex;
+    flex-direction: row;
+} 
+
+.list-header__title--small{
+    background-color: transparent;
+}
+
+.list-header__title--small > a{
+    background-color: transparent;
+}
+
+.list-header__title--small--active{
+    background-color: var(--secondary-color);
+}
+
+.last-reviews__container{
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.last-reviews__list-reviews{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.list-reviews__item{
+    width: 100%;
+}
+
+.last-reviews__title--small > a{
+    background-color: transparent;
+}
+
+.list-reviews__container-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-reviews__title-link{
+    font-weight: 700;
+    color: var(--title-color);
+    transition: all 300ms ease-in-out;
+}
+
+.list-reviews__title:hover .list-reviews__title-link{
+    color: var(--secondary-color);
+}
+
+.list-reviews__mark{
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.list-reviews__progressbar{
+    width: 100%;
+    height: 1rem;
+    border-radius: 4px;
+    border: 1px solid var(--input-aside-border-color);
+    background-color: var(--bg-navbar-color);
+}
+
+.list-reviews__bar{
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+}
+
+.list-reviews__bar--bar1{
+    width: 75%;
+}
+
+.list-reviews__bar--bar2{
+    width: 85%;
+}
+
+.list-reviews__bar--bar3{
+    width: 90%;
+}
+
+.list-reviews__bar--bar2{
+    width: 55%;
+}
+
+.list-reviews__bar--bar2{
+    width: 95%;
+}

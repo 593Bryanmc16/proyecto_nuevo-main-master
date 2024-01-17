@@ -18,10 +18,124 @@
     <link rel="stylesheet" href="./assets/css/news.css">
     <link rel="stylesheet" href="./assets/css/contact.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <!-- <link rel="stylesheet" href="./assets/css/dark.css"> -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <!-- Load JavaScript -->
+    <script defer src="./assets/js/menu-mobile.js"></script>
+    <script src="./assets/js/navbar-fixed.js"></script>
+    <script src="./assets/js/dark-mode.js"></script>
     <title>Web 2 MockUp | Bryan Quillay</title>
 </head>
 <body>
+
+    <!-- dark-mode button -->
+    <div class="switcher">
+        <button class="switcher__btn">
+            <span class="switcher__icon-light">
+                <i class="fa-solid fa-moon switcher__icon"></i>
+            </span>
+            <span class="switcher__icon-dark ">
+                <i class="fa-solid fa-lightbulb switcher__icon"></i>
+            </span>
+        </button>
+    </div>
+    <!-- Side Menu Responsive -->
+    <div class="menu-mobile">
+        <header class="menu-mobile__header">
+            <div class="menu-mobile__container-logo">
+                <a href="#" class="menu-mobile__link-logo">
+                    <img src="./assets/img/logo1.png" alt="Company logo" class="menu-mobile__logo">
+                </a>
+            </div>
+            <button class="menu-mobile__close">
+                <i class="menu-mobile__icon-close fa-solid fa-xmark"></i>
+            </button>
+        </header>
+
+        <div class="menu-mobile__body">
+            <div class="menu-mobile__nav">
+            <ul class="menu-mobile__list">
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link">Home</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link">Services
+                        <i class="menu-mobile__icon fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="menu-mobile__submenu-mobile">
+                        <li class="submenu-mobile__item">
+                            <a href="#" class="submenu-mobile__link">Web Design</a>
+                        </li>
+                        <li class="submenu-mobile__item">
+                            <a href="#" class="submenu-mobile__link">Web Development</a>
+                        </li>
+                        <li class="submenu-mobile__item">
+                            <a href="#" class="submenu-mobile__link">App Development</a>
+                        </li>
+                        <li class="submenu-mobile__item">
+                            <a href="#" class="submenu-mobile__link">Programming</a>
+                        </li>
+                        <li class="submenu-mobile__item">
+                            <a href="#" class="submenu-mobile__link">Consultancy</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link">Portfolio
+                        <i class="menu-mobile__icon fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="menu-mobile__submenu-mobile">
+                        <li class="submenu-mobile__item">
+                            <a href="#" class="submenu-mobile__link">Web Design</a>
+                        </li>
+                        <li class="submenu-mobile__item">
+                            <a href="#" class="submenu-mobile__link">Web Development</a>
+                        </li>
+                        <li class="submenu-mobile__item">
+                            <a href="#" class="submenu-mobile__link">App Development</a>
+                        </li>
+                        <li class="submenu-mobile__item">
+                            <a href="#" class="submenu-mobile__link">Programming</a>
+                        </li>
+                        <li class="submenu-mobile__item">
+                            <a href="#" class="submenu-mobile__link">Consultancy</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link">Blog
+                        <i class="menu-mobile__icon fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="menu-mobile__submenu-mobile">
+                        <li class="submenu-mobile__item">
+                            <a href="#" class="submenu-mobile__link">Web Design</a>
+                        </li>
+                        <li class="submenu-mobile__item">
+                            <a href="#" class="submenu-mobile__link">Web Development</a>
+                        </li>
+                        <li class="submenu-mobile__item">
+                            <a href="#" class="submenu-mobile__link">App Development</a>
+                        </li>
+                        <li class="submenu-mobile__item">
+                            <a href="#" class="submenu-mobile__link">Programming</a>
+                        </li>
+                        <li class="submenu-mobile__item">
+                            <a href="#" class="submenu-mobile__link">Consultancy</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link">Team</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#" class="menu-mobile__link">Contact Us</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+</div>
+
+    <!-- Main Layout -->
     <div class="layout">
         <!-- Menu -->
         <section class="layout__menu">
@@ -29,8 +143,18 @@
                 <!-- Logo -->
                 <div class="navbar__logo">
                     <a href="#" class="navbar__link-logo">
-                        <img src="./assets/img/logo1.png" alt="Company Logo" class="navbar__logo-light">
+                        <img  src="./assets/img/logo1.png" alt="Company Logo" class="navbar__logo-light">
                     </a>
+                </div>
+
+                <!-- Nav Menu Responsive Botton -->
+
+                <div class="navbar__mobile-btn">
+                    <button class="mobile-btn__wrap">
+                        <span class="mobile-btn__line"></span>
+                        <span class="mobile-btn__line"></span>
+                        <span class="mobile-btn__line"></span>
+                    </button>
                 </div>
                 <!-- Navbar Menu -->
                 <div class="navbar__nav">
@@ -113,6 +237,7 @@
                     </ul>
                 </div>
             </header>
+
         </section>
         <!-- Banner -->
         <section class="layout__banner">

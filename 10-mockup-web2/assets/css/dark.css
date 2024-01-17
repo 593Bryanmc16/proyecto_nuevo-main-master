@@ -1,0 +1,137 @@
+/* Variables */
+:root{
+    --max-width: 1320px;
+    --primary-color: #5956e9;
+    --secondary-color: #D3D3D4;
+
+    --body-text-color: #D3D3D4;
+    --banner-color: #27272E;
+    --btn-color: #fff;
+    --btn-bg-color: #2522ba;
+    --subtitle-color: #c75c6f;
+    --title-color: #fff;
+    --bg-services--color:#27272E;
+    --bg-projects-color: #292930;
+    --bg-dark-color: #272726 ;
+    --text-description-color: #99A1AA;
+    --hover-dark-color: #303035;
+    --borders-color: #393940;
+}
+
+body{
+    background-color: #212121;
+}
+
+.nav__title:hover{
+    color: var(--secondary-color);
+}
+
+.nav__title::before{
+    background-color: var(--secondary-color);
+}
+
+.nav__submenu{
+    background-color: var(--banner-color);
+}
+
+.submenu__title:hover{
+    color: var(--secondary-color);
+}
+
+.submenu__title::after{
+    background-color: var(--secondary-color);
+}
+
+
+.services__service{
+    background: none;
+    background-color: var(--bg-services--color);
+}
+
+.service__more:hover, .service__title:hover {
+    color: var(--body-text-color);
+}
+
+.service__more, .new__more {
+    position: relative;
+    display: inline-block;
+    color: var(--secondary-color);
+    font-weight: 500;
+    padding-left: 4rem;
+    transition: all 300ms ease-in-out;
+}
+
+.menu__navbar--fixed{
+    background-color: var(--banner-color);
+}
+
+.project__content{
+    background-color: var(--banner-color);
+}
+
+.categories__item-active, .categories__item:hover {
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.project__link-title:hover {
+    color: var(--secondary-color);
+}
+
+.news__new:hover, .new__more:hover {
+    border-top-color: var(--secondary-color);
+}
+
+.new__title:hover {
+    color: var(--body-text-color);
+}
+
+.new__more:hover {
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.layout__contact::before{
+    background-color: var(--banner-color);
+}
+
+.contact__subtitle{
+    color: #FFDC90;
+}
+
+.contact__btn{
+    background-color: var(--primary-color);
+    color: var(--body-text-color);
+}
+
+.fleft__group{
+    background-color: #27272E;
+    box-shadow: none;
+}
+
+.fleft__form-control{
+    background-color: #27272E;
+}
+
+.fleft__btn:hover {
+    background-color: var(--btn-bg-color);
+}
+
+.widget__item:hover .widget__link {
+    color: var(--secondary-color);
+}
+
+.copyright__text a:hover {
+    color: var(--secondary-color);
+}
+
+.mobile-btn__wrap{
+    background-color: var(--bg-projects-color);
+}
+
+.menu-mobile--show {
+    background-color: var(--bg-dark-color);
+}
+
+.menu-mobile__close {
+    color: var(--secondary-color);
+}

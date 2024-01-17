@@ -43,8 +43,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: 50%;
     gap: 5rem 7rem;
+}
+
+.projects__project{
+    width: calc(50% - 3.5rem);
 }
 
 .project__container-img{

@@ -1,0 +1,84 @@
+/* variables */
+
+:root{
+    --primary-color: #fff;
+    --secondary-color: #329153;
+    --bg-navbar-color: #333946;
+    --border-list-color: rgba(255, 255,255, .3);
+    --sublist-hover-item-color: rgba(0,0,0, .3);
+    --shadow-color: rgba(0,0,0, .1);
+    --marquee-bg-color: #EEEE;
+    --marquee-text-color: #7C7C7C;
+    --highlights-border-color: #F3F3F3;
+    --title-color:#333333;
+    --readmore-border-color: #7C7F88;
+    --aside-background-color: #F5F5F5;
+    --input-aside-border-color: #F3F3F3;
+    --twitter-bg-color: #2FC2EF;
+    --facebook-bg-color: #4C66A4;
+    --youtube-bg-color: #CC181E;
+    --instagram-bg-color: #EA4C89;
+    --linkdin-bg-color: #F4A62A;
+    --footer-bg-color: #222222;
+    --footer-p-bg-color: #111111;
+}
+
+/* General Styles */
+html{
+    font-size: 10px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat","Helvetica Neue", Helvetica, Arial, sans-serif ;
+    font-size: 1.6rem;
+    background-color: var(--primary-color);
+    overflow-x: hidden;
+}
+
+/* Decorative Bar */
+
+.decoration-bar{
+    width: 100%;
+    min-height: 3rem;
+    background-color: var(--secondary-color);
+}
+
+/* layout section */
+
+.layout{
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "marquee marquee"
+        "slider slider"
+        "highlights highlights"
+        "videos videos"
+        "carousel carousel"
+        "main aside"
+    ;
+    grid-template-columns: 70% 30%;
+    width: 55vw;
+    min-width: 100rem;
+    margin: 0 auto;
+
+    margin-top: 3.5rem;
+    overflow: hidden;
+}
+
+/* header styles */
+
+.layout__header{
+    grid-area: header;
+    width: 100%;
+    min-width: 100%;
+    margin-bottom: 2rem;
+}
+
+.header__img{
+    width: 16rem;
+}
+
